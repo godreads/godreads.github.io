@@ -4,49 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>contents</title>
-body {
-    font-family: 'Courier New', Courier, monospace; 
-    color: darkgrey;
-    display: flex; 
-    flex-direction: column; 
-    align-items: center; 
-    justify-content: center; 
-    height: 100vh; 
-    margin: 0;
-}
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace; 
+            color: darkgrey;
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+            justify-content: center; 
+            height: 100vh; 
+            margin: 0;
+        }
 
-.container {
-    text-align: left;
-    max-width: 600px; 
-    width: 90%; /* Use 90% of screen width by default */
-    box-sizing: border-box; /* This ensures padding doesn't add extra width */
-}
+        .container {
+            text-align: left;
+            max-width: 600px; 
+            width: 90%; 
+            box-sizing: border-box;
+        }
 
-h1 {
-    font-size: 2.5rem; 
-    margin-bottom: 50px; 
-    text-align: left; 
-}
+        h1 {
+            font-size: 2.5rem; 
+            margin-bottom: 50px; 
+            text-align: left; 
+        }
 
-a {
-    text-decoration: none;
-    color: darkgrey;
-    display: block;
-    margin: 10px 0; 
-    font-size: 1.2rem; 
-}
+        a {
+            text-decoration: none;
+            color: darkgrey;
+            display: block;
+            margin: 10px 0; 
+            font-size: 1.2rem; 
+        }
 
-/* Media Query for Smaller Devices */
-@media only screen and (max-width: 600px) {
-    h1 {
-        font-size: 2rem; /* Slightly smaller font for mobile */
-        margin-bottom: 30px; /* Reduced margin */
-    }
-    a {
-        font-size: 1rem; /* Smaller link size */
-        margin: 8px 0; /* Reduced margin between links */
-    }
-}
+        /* Media Query for Smaller Devices */
+        @media only screen and (max-width: 600px) {
+            h1 {
+                font-size: 2rem; 
+                margin-bottom: 30px;
+            }
+            a {
+                font-size: 1rem; 
+                margin: 8px 0; 
+            }
+        }
+    </style>
 </head>
 <body>
     <div class="container">
