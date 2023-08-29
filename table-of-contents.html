@@ -4,34 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>contents</title>
-    <style>
-        body {
-            font-family: 'Courier New', Courier, monospace; /* Typewriter-like font */
-            color: darkgrey;
-            display: flex; /* Flexbox to center the container */
-            flex-direction: column; /* Stack children vertically */
-            align-items: center; /* Center container horizontally */
-            justify-content: center; /* Center container vertically */
-            height: 100vh; /* Take up full viewport height */
-            margin: 0; /* Remove default margin */
-        }
-        .container {
-            text-align: left; /* Justify contents to the left */
-            max-width: 600px; /* Set a maximum width for the container */
-        }
-        h1 {
-            font-size: 2.5rem; /* Large font size for the title */
-            margin-bottom: 50px; /* Space between title and the links */
-            text-align: left; /* Center the title */
-        }
-        a {
-            text-decoration: none;
-            color: darkgrey;
-            display: block; /* Each link on a new line */
-            margin: 10px 0; /* Some vertical spacing between links */
-            font-size: 1.2rem; /* Font size for the links */
-        }
-    </style>
+body {
+    font-family: 'Courier New', Courier, monospace; 
+    color: darkgrey;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    height: 100vh; 
+    margin: 0;
+}
+
+.container {
+    text-align: left;
+    max-width: 600px; 
+    width: 90%; /* Use 90% of screen width by default */
+    box-sizing: border-box; /* This ensures padding doesn't add extra width */
+}
+
+h1 {
+    font-size: 2.5rem; 
+    margin-bottom: 50px; 
+    text-align: left; 
+}
+
+a {
+    text-decoration: none;
+    color: darkgrey;
+    display: block;
+    margin: 10px 0; 
+    font-size: 1.2rem; 
+}
+
+/* Media Query for Smaller Devices */
+@media only screen and (max-width: 600px) {
+    h1 {
+        font-size: 2rem; /* Slightly smaller font for mobile */
+        margin-bottom: 30px; /* Reduced margin */
+    }
+    a {
+        font-size: 1rem; /* Smaller link size */
+        margin: 8px 0; /* Reduced margin between links */
+    }
+}
 </head>
 <body>
     <div class="container">
