@@ -8,11 +8,21 @@
         body {
             font-family: 'Courier New', Courier, monospace; /* Typewriter-like font */
             color: darkgrey;
-            padding: 50px;
+            display: flex; /* Flexbox to center the container */
+            flex-direction: column; /* Stack children vertically */
+            align-items: center; /* Center container horizontally */
+            justify-content: center; /* Center container vertically */
+            height: 100vh; /* Take up full viewport height */
+            margin: 0; /* Remove default margin */
+        }
+        .container {
+            text-align: left; /* Justify contents to the left */
+            max-width: 600px; /* Set a maximum width for the container */
         }
         h1 {
             font-size: 2.5rem; /* Large font size for the title */
             margin-bottom: 50px; /* Space between title and the links */
+            text-align: center; /* Center the title */
         }
         a {
             text-decoration: none;
@@ -24,11 +34,13 @@
     </style>
 </head>
 <body>
-    <h1>Contents</h1>
-    <a href="note-from-the-author.html">note from the author</a>
-    <a href="part-i.html">part i - in which the disciples of sappho are observed</a>
-    <a href="part-ii.html">part ii</a>
-    <a href="part-iii.html">part iii</a>
-    <a href="acknowledgements.html">acknowledgements</a>
+    <div class="container">
+        <h1>Contents</h1>
+        <a href="note-from-the-author.html">Note from the Author</a>
+        <a href="part-i.html">part i - in which the disciples of sappho are observed</a>
+        <a href="part-ii.html">part ii</a>
+        <a href="part-iii.html">part iii</a>
+        <a href="acknowledgements.html">acknowledgements</a>
+    </div>
 </body>
 </html>
